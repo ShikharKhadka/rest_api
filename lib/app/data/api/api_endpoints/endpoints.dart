@@ -5,4 +5,5 @@ class ApiEndpoints {
   static const news = '$baseUrl/news';
   static const getRecentNews = '/get_recent_news/';
   static const author = '/author';
+  static const category = '/category';
 }

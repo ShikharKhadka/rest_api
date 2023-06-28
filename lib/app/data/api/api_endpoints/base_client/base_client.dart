@@ -9,9 +9,9 @@ class BaseClient {
   Dio _createDio() {
     Dio dio = Dio();
     dio.options = BaseOptions(
-      baseUrl: ApiEndpoints.baseUrl,
-      contentType: 'application/json',
-    );
+        baseUrl: ApiEndpoints.baseUrl,
+        contentType: 'application/json',
+        responseType: ResponseType.plain);
     dio.interceptors.addAll([PrettyDioLogger(requestBody: false)]);
     return dio;
   }

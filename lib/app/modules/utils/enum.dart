@@ -1,5 +1,5 @@
 enum NewsType {
-  home(displayName: "home"),
+  home(displayName: "politics"),
   sports(displayName: "sports");
 
   final String displayName;
